@@ -301,6 +301,8 @@ body {
   background-color: #31d0aa;
 }
 .soc-footer {
+}
+.soc-form {
   display: flex;
 }
 .soc-title-footer {
@@ -314,10 +316,19 @@ body {
 .soc-btn-footer {
   background: #4d5ae5;
   border-radius: 4px;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
+  height: 40px;
+  width: 165px;
+  margin-left: 24px;
+  padding: 8px 24px;
+  display: flex;
+  gap: 16px;
+  border: none;
+}
+.soc-icon {
+  fill: #ffffff;
 }
 .input-soc-footer {
   font-weight: 400;
@@ -334,6 +345,7 @@ body {
   background-color: transparent;
   height: 40px;
   padding-left: 16px;
+  outline: none;
 }
 
 /* -------------------The-main-page--------------------- */
@@ -590,7 +602,7 @@ body {
   top: 50%;
   left: 50%;
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
@@ -638,5 +650,98 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+.modal-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  padding-left: 38px;
+}
+.modal-input:focus {
+  border: 1px solid #4d5ae5;
+}
+.modal-input:focus + .input-modal-icon {
+  fill: #4d5ae5;
+}
+.input-modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal-field {
+  margin-bottom: 8px;
+}
+.modal-wrap {
+  position: relative;
+}
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  padding-top: 8px;
+  padding-left: 16px;
+  resize: none;
+}
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.check-text {
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+}
+.check-text::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2e2f42;
+  border-radius: 3px;
+  display: block;
+  margin-right: 8px;
+}
+.input-check:checked + .check-text::before {
+  background-color: #404bbf;
+  border: none;
+  background-image: url(../img/radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-send {
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  margin-top: 24px;
 }
